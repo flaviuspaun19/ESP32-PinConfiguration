@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESP32 LED Control</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>ESP32 LED TOGGLE</h1>
+        <p>Current LED State: <span id="state">OFF</span></p>
+        <button id="toggleButton">Toggle LED</button>
+        <div class="message-container">
+            <h2>Send a message</h2>
+            <input type="text" id="messageInput" placeholder="Enter message">
+            <button id="sendButton">Send Message</button>
+        </div>
+        <button id="sendJsonButton">Send JSON</button>
+    </div>
+    
+    <script src="/script.js?v=1.0.1"></script>
+</body>
+</html>

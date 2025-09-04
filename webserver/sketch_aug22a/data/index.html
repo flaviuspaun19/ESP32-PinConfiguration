@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESP32 Pin Configurator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+<body>
+    <div class="frutiger-bg"></div>
+
+    <div id="dashboard">
+        <div class="pin-header">
+            <h3 id="pinName">GPIO23</h3>
+            <p class="sub-heading">Configuration Panel</p>
+        </div>
+        
+        <div class="control-section">
+            <label>Pin Function:</label>
+            <div class="select-wrapper">
+                <select id="functionSelect">
+                    <option value="" disabled selected>Select function</option>
+                </select>
+            </div>
+
+            <div class="mode-options">
+                <label>
+                    <input type="radio" name="mode" value="input" checked> <span>Input</span>
+                </label>
+                <label>
+                    <input type="radio" name="mode" value="output"> <span>Output</span>
+                </label>
+            </div>
+        </div>
+
+        <div id="configArea" class="config-area"></div>
+
+        <button id="savePinMode" class="save-button">Save Configuration</button>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>
